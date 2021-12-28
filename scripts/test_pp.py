@@ -21,3 +21,11 @@ class TestGaoTu:
         driver.maximize_window()
         sleep(3)
         driver.quit()
+
+    @allure.step(title='蘑菇街')
+    def test_mogu(self):
+        driver = webdriver.Chrome()
+        driver.get("http://www.mogu.com")
+        driver.maximize_window()
+        sleep(3)
+        driver.quit()
